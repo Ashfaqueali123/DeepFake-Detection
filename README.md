@@ -26,26 +26,6 @@ API Contract	OpenAPI 3.0 → Orval (React Query hooks + Zod schemas)
 Build	esbuild (API), Vite (frontend)
 Package Manager	pnpm workspaces (monorepo)
 Fonts	Montserrat (headings), Poppins (body)
-Project Structure
-.
-├── artifacts/
-│   ├── api-server/          # Express 5 REST API (port 8080)
-│   │   └── src/
-│   │       ├── routes/      # detection, articles, contact, stats
-│   │       └── index.ts
-│   └── deepfake-detection/  # React + Vite frontend
-│       └── src/
-│           ├── pages/       # Home, About, Services, Demo, Blog, BlogPost, Contact
-│           ├── components/  # Navbar, Footer, MainLayout, shadcn/ui
-│           └── index.css    # Theme variables (navy + cyan)
-├── lib/
-│   ├── api-client-react/    # Orval-generated React Query hooks
-│   ├── api-spec/            # OpenAPI 3.0 specification + codegen config
-│   ├── api-zod/             # Orval-generated Zod validation schemas
-│   └── db/                  # Drizzle ORM schema + migrations
-├── scripts/                 # Utility scripts
-├── pnpm-workspace.yaml
-└── tsconfig.base.json
 
 Pages
 Route	Description
